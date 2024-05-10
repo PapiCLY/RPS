@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(79, 138, 79);
+}
+
 h1{
     text-align: center;
     margin: 50px;
@@ -19,7 +23,7 @@ h1{
     width: 33.33%;
     padding: 10px;
     height: 300px;
-    border: 2px solid black;
+    border: 2px dashed rgb(103, 180, 103);
     border-radius: 20px;
     width: 25%;
     text-align: center;
@@ -41,11 +45,15 @@ h1{
   .results-row{
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px dashed rgb(103, 180, 103);
     height: 200px;
     width: 77%;
     margin: auto;
     border-radius: 20px;
+  }
+
+  #resultsSection{
+    margin-bottom: 35px;
   }
 
   /*button section*/
@@ -72,4 +80,7 @@ h1{
   img{
     border-radius: 40%; /* Set border-radius to 50% for a circle */
     overflow: hidden; /* Hide any overflow content (to maintain circle shape) */
+    height:150px;
+    border: 2px dashed rgb(103, 180, 103);
+    padding: 10px;
   }
