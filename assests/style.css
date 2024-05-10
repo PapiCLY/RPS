@@ -170,3 +170,89 @@ button:hover{
   text-align: center;
   margin-bottom: 25px;
 }
+
+.score-column h2::after
+{
+  content: ' Score';
+}
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+  .score-column h2::after{
+    display: none;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .score-column {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .results-row {
+    width: 90%;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  button {
+    font-size: 1.5em;
+  }
+
+  #rules {
+    margin-bottom: 15px;
+  }
+  .results-column{
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .score-column {
+    width: 33.33%;
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .results-row {
+    width: 77%;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  button {
+    font-size: 2em;
+  }
+
+  #rules {
+    margin-bottom: 20px;
+  }
+}
