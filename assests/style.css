@@ -33,6 +33,17 @@ h1{
     clear: both;
   }
 
+  /*results section*/
+  .results-row{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+  }
+
   /*button section*/
   .button-column {
     float: left;
