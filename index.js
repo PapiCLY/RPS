@@ -24,13 +24,37 @@ function compareChoices(nameTag, cpuSelection){
     let cpu = document.getElementById('cpu')
     let tieScore = document.getElementById('tie')
     if(nameTag === 'rock' && cpuSelection==='scissors' || nameTag==='paper' && cpuSelection==='rock' || nameTag==='scissors' && cpuSelection==='rock'){
-        results.innerHTML = `Player Wins! 😁`
-        player.innerHTML = `${playerScore += 1}`
+        results.textContent = `Player Wins! 😁`
+        player.textContent = `${playerScore += 1}`
     } else if(nameTag===cpuSelection){
-        results.innerHTML = `Tie Game! 😑`
-        tieScore.innerHTML = `${ties += 1}`
+        results.textContent = `Tie Game! 😑`
+        tieScore.textContent = `${ties += 1}`
     } else{
-        results.innerHTML = `CPU Wins! 😞`
-        cpu.innerHTML = `${cpuScore += 1}`
+        results.textContent = `CPU Wins! 😞`
+        cpu.textContent = `${cpuScore += 1}`
     }
+
+    if(playerScore === 10 || cpuScore === 10){
+        resetGame(playerScore, cpuScore)
+    }
+}
+
+function resetGame(playerScore, cpuScore){
+    let results = document.querySelector('.results-column')
+    let buttonDiv = document.querySelectorAll('.button-column')
+    if(playerScore > cpuScore){
+        results.innerText = `GAME OVER! You win! 😀 Please reset below to play again`
+        //buttonDiv.setAttribute('style', 'display: none;')
+        buttonDiv.forEach(buttonDiv => {
+            buttonDiv.setAttribute('style', 'display: none;')
+        })
+    } else{
+        results.innerText = `GAME OVER! CPU Wins 😭 Please reset below to play again`
+        buttonDiv.forEach(buttonDiv => {
+            buttonDiv.setAttribute('style', 'display: none;')
+        })
+    }
+    
+
+   
 }
