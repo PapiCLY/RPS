@@ -10,7 +10,7 @@ h1{
 }
 
 /* Score Section */
-.column {
+.score-column {
     float: left;
     width: 33.33%;
     padding: 10px;
@@ -21,14 +21,40 @@ h1{
     text-align: center;
   }
   
-.row{
+.score-row{
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
   /* Clear floats after the columns */
-  .row:after {
+  .score-row:after {
     display: table;
     clear: both;
+  }
+
+  /*button section*/
+  .button-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    width: 25%;
+    text-align: center;
+  }
+  
+.button-row{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+  .button-row:after {
+    display: table;
+    clear: both;
+  }
+
+  img{
+    border-radius: 40%; /* Set border-radius to 50% for a circle */
+    overflow: hidden; /* Hide any overflow content (to maintain circle shape) */
   }
