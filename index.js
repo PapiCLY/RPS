@@ -35,7 +35,7 @@ function compareChoices(nameTag, cpuSelection){
         cpu.textContent = `${cpuScore += 1}`
     }
 
-    if(playerScore === 1 || cpuScore === 1){
+    if(playerScore === 10 || cpuScore === 10){
         resetGame(playerScore, cpuScore)
     }
 }
