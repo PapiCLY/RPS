@@ -34,7 +34,7 @@ function compareChoices(nameTag, cpuSelection){
         cpu.textContent = `${cpuScore += 1}`
     }
 
-    if(playerScore === 10 || cpuScore === 10){
+    if(playerScore === 1 || cpuScore === 1){
         resetGame(playerScore, cpuScore)
     }
 }
@@ -48,11 +48,17 @@ function resetGame(playerScore, cpuScore){
         buttonDiv.forEach(buttonDiv => {
             buttonDiv.setAttribute('style', 'display: none;')
         })
+        const button = document.createElement('button')
+            button.textContent = 'Reset Game'
+            document.body.appendChild(button)
     } else{
         results.innerText = `GAME OVER! CPU Wins 😭 Please reset below to play again`
         buttonDiv.forEach(buttonDiv => {
             buttonDiv.setAttribute('style', 'display: none;')
         })
+        const button = document.createElement('button')
+            button.textContent = 'Reset Game'
+            document.body.appendChild(button)
     }
     
 
