@@ -1,4 +1,5 @@
 const imageButtons = document.querySelectorAll('.imgBtn')
+
 let playerScore = 0
 let cpuScore = 0
 let ties = 0
@@ -51,6 +52,9 @@ function resetGame(playerScore, cpuScore){
         const button = document.createElement('button')
             button.textContent = 'Reset Game'
             document.body.appendChild(button)
+            button.addEventListener('click',  ()=>{
+                resetScores
+            })
     } else{
         results.innerText = `GAME OVER! CPU Wins 😭 Please reset below to play again`
         buttonDiv.forEach(buttonDiv => {
@@ -59,8 +63,29 @@ function resetGame(playerScore, cpuScore){
         const button = document.createElement('button')
             button.textContent = 'Reset Game'
             document.body.appendChild(button)
+            button.addEventListener('click',  ()=>{
+                resetScores()
+            })
     }
     
+}
 
-   
+function resetScores(){
+    const button = document.querySelector('button')
+    let buttonDiv = document.querySelectorAll('.button-column')
+    let pScore = document.getElementById('p1')
+    let cpScore = document.getElementById('cpu')
+    let tiedScore = document.getElementById('tie')
+    let resultsField = document.querySelector('.results-column')
+    playerScore = 0
+    cpuScore = 0
+    ties = 0
+    pScore.textContent = playerScore
+    cpScore.textContent = cpuScore
+    tiedScore.textContent = ties
+    resultsField.textContent = ''
+    buttonDiv.forEach(buttonDiv => {
+        buttonDiv.setAttribute('style', 'display: block;')
+    })
+    button.style.display = 'none'
 }
