@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+/*Plexifly-Google Font*/
+h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 3em;
+  color:  rgb(191, 209, 87);
+}
+
 body{
     background-color: rgb(79, 138, 79);
 }
@@ -87,7 +97,7 @@ h1{
   img{
     border-radius: 40%; /* Set border-radius to 50% for a circle */
     overflow: hidden; /* Hide any overflow content (to maintain circle shape) */
-    height:150px;
+    height: 150px;
     border: 2px dashed rgb(103, 180, 103);
     padding: 10px;
     background-color: rgb(79, 138, 79);
@@ -100,3 +110,4 @@ h1{
     transform: scale(1.05);
     cursor: pointer;
   }
+
