@@ -27,6 +27,13 @@ h1{
     border-radius: 20px;
     width: 25%;
     text-align: center;
+    background-color: rgb(79, 138, 79);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  .score-column:hover{
+    border: 2px solid rgb(103, 180, 103);
+    background-color:  rgb(103, 180, 103);
   }
   
 .score-row{
