@@ -10,6 +10,10 @@ h1{
 }
 
 /* Score Section */
+#scoreSection{
+    margin-bottom: 35px;
+}
+
 .score-column {
     float: left;
     width: 33.33%;
@@ -39,7 +43,7 @@ h1{
     justify-content: center;
     border: 2px solid black;
     height: 200px;
-    width: 80%;
+    width: 77%;
     margin: auto;
     border-radius: 20px;
   }
