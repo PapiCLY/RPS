@@ -53,7 +53,7 @@ function resetGame(playerScore, cpuScore){
             button.textContent = 'Reset Game'
             document.body.appendChild(button)
             button.addEventListener('click',  ()=>{
-                resetScores
+                resetScores()
             })
     } else{
         results.innerText = `GAME OVER! CPU Wins 😭 Please reset below to play again`
