@@ -171,15 +171,15 @@ button:hover{
   margin-bottom: 25px;
 }
 
-.score-column h2::after
+/* .score-column h2::after
 {
   content: ' Score';
-}
+} */
 /* For mobile phones */
 @media only screen and (max-width: 600px) {
-  .score-column h2::after{
+  /* .score-column h2::after{
     display: none;
-  }
+  } */
   h1 {
     font-size: 2em;
     margin: 20px;
